@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<!-- This is the basic HTML structure for a web page. It contains the doctype declaration, html opening and closing tags, head and body sections. The head contains meta tags for character encoding and viewport settings, as well as the page title. The body is currently empty. This provides a starting point for adding content to a web page. -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Light Able | Documentation</title>
+    <style>
+        /* Styles for the Header section */
+        header {
+  display: flex;
+  align-items: center;
+  padding: 60px;
+}
+
+.header-content {
+  flex: 1;
+}
+
+.header-content h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.header-content p {
+  font-size: 18px;
+  color: #555;
+}
+
+.header-image {
+  flex: 1;
+  text-align: right;
+}
+
+.header-image img {
+  width: 300px;
+}
+
+
+      /* Styles for the getting started section */
+section {
+  margin: 80px 30px; 
+}
+
+
+
+
+      .getting-started {
+        background-color: #f2f2f2;
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      .getting-started h2 {
+        font-size: 24px;
+      }
+
+      .getting-started h3 {
+        font-size: 18px;
+      }
+
+      .getting-started code {
+        background-color: #ddd;
+        padding: 5px;
+        border-radius: 5px;
+        font-family: monospace;
+      }
+
+      /* Styles for the folder structure section */
+
+      .folder-structure {
+        margin-top: 40px;
+      }
+
+      .folder-structure h2 {
+        font-size: 24px;
+      }
+
+      .folder-structure table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      .folder-structure td {
+        padding: 10px;
+        border: 1px solid #ddd;
+      }
+
+      .folder-structure .folder {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+
+        <div class="header-content">
+      
+          <h1>Light Able Vue</h1>
+      
+          <p>Open source Vue admin template</p>
+      
+        </div>
+      
+        <div class="header-image">
+      
+          <img src="logo.png" alt="Light Able Vue">
+      
+        </div>
+      
+      </header>
+
+    <section class="getting-started">
+        <h2>Getting Started</h2>
+
+        <p>
+          This section explains how to install and run Light Able Vue for the first time. It covers the prerequisites and commands needed to start development.
+        </p>
+      <h3>
+        To get started with this project, you will need to have the following
+        installed:
+      </h3>
+      <ul>
+        <li>Node.js v14.0.0 or higher</li>
+        <li>npm v6.0.0 or higher | yarn 1.22.21 or higher</li>
+        <li>Vue CLI</li>
+      </ul>
+      <h3>Install dependencies:</h3>
+      <code> npm install or yarn add</code>
+
+      <h3>Install dependencies</h3>
+      <code>npm install or yarn install</code>
+
+      <h3>Install Vue CLI</h3>
+      <code> npm install -g @vue/cli | yarn add -g @vue/cli</code>
+
+      <h3>Compiles and hot-reloads for development</h3>
+      <code> npm run serve | yarn serve</code>
+
+      <h3>Compiles and minifies for production</h3>
+      <code>npm run build | yarn build</code>
+
+      <h3>Lints and fixes files</h3>
+      <code>npm run lint | yarn lint</code>
+    </section>
+
+    <section class="folder-structure">
+        <h2>Folder Structure</h2>  
+
+        <p>
+          This section outlines the folder structure of a Light Able Vue project. It describes the purpose of each folder and main files.
+        </p>
+      <table>
+        <tr>
+          <td>my-vue-app</td>
+        </tr>
+        <tr>
+          <td>├── 📄 README.md</td>
+        </tr>
+        <tr>
+          <td>├── 📁 node_modules</td>
+        </tr>
+        <tr>
+          <td>├── 📄 package.json</td>
+        </tr>
+        <tr>
+          <td>├── 📄 .gitignore</td>
+        </tr>
+        <tr>
+          <td>├── 📁 public</td>
+        </tr>
+        <tr>
+          <td>│ ├── 📄 favicon.ico</td>
+        </tr>
+        <tr>
+          <td>│ └── 📄 index.html</td>
+        </tr>
+        <tr>
+          <td>├── 📁 src</td>
+        </tr>
+        <tr>
+          <td>│ ├── 📁 assets</td>
+        </tr>
+        <tr>
+          <td>│ │ └── 📄 logo.png</td>
+        </tr>
+        <tr>
+          <td>│ ├── 📁 components</td>
+        </tr>
+        <tr>
+          <td>│ │ └── 📄 HelloWorld.vue</td>
+        </tr>
+        <tr>
+          <td>│ ├── 📄 App.vue</td>
+        </tr>
+        <tr>
+          <td>│ ├── 📄 main.js</td>
+        </tr>
+        <tr>
+          <td>│ ├── 📄 router.js</td>
+        </tr>
+        <tr>
+          <td>│ └── 📄 store.js</td>
+        </tr>
+        <tr>
+          <td>└── 📁 tests</td>
+        </tr>
+        <tr>
+          <td>└── 📁 unit</td>
+        </tr>
+        <tr>
+          <td>└── 📄 example.spec.js</td>
+        </tr>
+      </table>
+
+      <h2>Folder Structure</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Folder</th>
+            <th>Use-Description</th>
+          </tr>
+        </thead>
+
+        <tr>
+          <td>public</td>
+          <td>contains static assets like images, HTML files</td>
+        </tr>
+
+        <tr>
+          <td>src</td>
+          <td>contains Vue components, routers, store etc.</td>
+        </tr>
+
+        <tr>
+          <td>components</td>
+          <td>reusable Vue components</td>
+        </tr>
+
+        <tr>
+          <td>tests</td>
+          <td>unit and end-to-end tests</td>
+        </tr>
+
+        <tr>
+          <td>readme.md</td>
+          <td>readme file</td>
+        </tr>
+
+        <tr>
+          <td>node_modules</td>
+          <td>dependencies</td>
+        </tr>
+
+        <tr>
+          <td>package.json</td>
+          <td>metadata</td>
+        </tr>
+
+        <tr>
+          <td>.gitignore</td>
+          <td>git config</td>
+        </tr>
+
+        <tr>
+          <td>assets</td>
+          <td>static assets</td>
+        </tr>
+
+        <tr>
+          <td>logo.png</td>
+          <td>logo image</td>
+        </tr>
+
+        <tr>
+          <td>app.vue</td>
+          <td>main app component</td>
+        </tr>
+
+        <tr>
+          <td>main.js</td>
+          <td>entry point</td>
+        </tr>
+
+        <tr>
+          <td>router.js</td>
+          <td>router config</td>
+        </tr>
+
+        <tr>
+          <td>store.js</td>
+          <td>state management</td>
+        </tr>
+
+        <tr>
+          <td>example.spec.js</td>
+          <td>test file</td>
+        </tr>
+      </table>
+    </section>
+
+    <section class="html-structure">
+      <h2>HTML Structure</h2>
+      <p>
+        The main App component is in App.vue. 
+        This contains the router-view
+        component which renders the different page components based on the
+        route.
+      </p>
+      <p>
+        Each page component can be found in the pages folder, e.g. Home.vue,
+        About.vue.
+      </p>
+    </section>
+
+    <section class="source-credit">
+        <h2>Source & Credits</h2>  
+
+  <p>
+    This section lists the open source libraries used in Light Able Vue and their version numbers.
+  </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Sources</th>
+            <th>Version</th>
+            <th>Usecase</th>
+          </tr>
+        </thead>
+
+        <tbody>
+
+          <tr>
+            <td>vue-router</td>
+            <td>^4.0.3</td>
+            <td>Routing</td>
+          </tr>
+
+          <tr>
+            <td>vuex</td>
+            <td>^4.0.0</td>
+            <td>State management</td>
+          </tr>
+
+          <tr>
+            <td>@vue/cli-service</td>
+            <td>~5.0.0</td>
+            <td>Build tooling</td>
+          </tr>
+
+          <tr>
+            <td>sass</td>
+            <td>^1.32.7</td>
+            <td>CSS pre-processor</td>
+          </tr>
+
+          <tr>
+            <td>add</td>
+            <td>^2.0.6</td>
+            <td>Math utilities</td>
+          </tr>
+
+          <tr>
+            <td>aos</td>
+            <td>^2.3.4</td>
+            <td>Scroll animations</td>
+          </tr>
+
+          <tr>
+            <td>apexcharts</td>
+            <td>^3.44.2</td>
+            <td>Charts</td>
+          </tr>
+
+          <tr>
+            <td>bootstrap</td>
+            <td>^5.3.2</td>
+            <td>CSS framework</td>
+          </tr>
+
+          <tr>
+            <td>bootstrap-vue-next</td>
+            <td>^0.15.5</td>
+            <td>Bootstrap Vue integration</td>
+          </tr>
+
+          <tr>
+            <td>core-js</td>
+            <td>^3.34.0</td>
+            <td>Polyfills</td>
+          </tr>
+
+          <tr>
+            <td>echarts</td>
+            <td>^5.4.3</td>
+            <td>Charts</td>
+          </tr>
+
+          <tr>
+            <td>metismenujs</td>
+            <td>^1.4.0</td>
+            <td>Sidebar menu</td>
+          </tr>
+
+          <tr>
+            <td>moment</td>
+            <td>^2.29.4</td>
+            <td>Date utilities</td>
+          </tr>
+
+          <tr>
+            <td>sass</td>
+            <td>^1.69.5</td>
+            <td>CSS pre-processor</td>
+          </tr>
+
+          <tr>
+            <td>prismjs</td>
+            <td>^1.29.0</td>
+            <td>Code highlighting</td>
+          </tr>
+
+          <tr>
+            <td>sass-loader</td>
+            <td>^13.3.2</td>
+            <td>Sass loader</td>
+          </tr>
+
+          <tr>
+            <td>simplebar-vue</td>
+            <td>^2.3.3</td>
+            <td>Custom scrollbars</td>
+          </tr>
+
+          <tr>
+            <td>sweetalert2</td>
+            <td>^11.10.1</td>
+            <td>Alert popups</td>
+          </tr>
+
+          <tr>
+            <td>swiper</td>
+            <td>^11.0.5</td>
+            <td>Carousels</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </body>
+  <!-- The html opening tag indicates the beginning of an HTML document. All content inside the html tags will be interpreted as HTML markup. The closing html tag indicates the end of the HTML document. -->
+</html>
